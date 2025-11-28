@@ -1,9 +1,6 @@
 module.exports = ({ env }) => ({
   auth: {
-    secret: env('AUTH_SECRET'),
+    secret: env('ADMIN_SECRET'),
   },
-  apiToken: {
-    salt: env('API_TOKEN_SALT'),
-  },
-  url: env('ADMIN_URL'),
+  url: env('PUBLIC_URL') + '/admin',
 });
